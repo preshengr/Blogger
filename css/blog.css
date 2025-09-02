@@ -1,0 +1,111 @@
+/* Here is the List Selector */
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+/* List Selector for the headings */
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 27px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 23px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 17px;
+}
+
+/* ID selector styling */
+#author {
+  font-size: 13px;
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Class selector styling */
+.related-author {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f0f8ff;
+}
+
+/* Styling the related post */
+aside {
+  background-color: #f0f8ff;
+  border-top: 5px solid #b87e7e;
+  border-bottom: 5px solid #b87e7e;
+}
+
+/* Styling lists using psuedo classes */
+li:first-child {
+  color: blue;
+  font-style: italic;
+}
+
+li:nth-child(even) {
+  color: orangered;
+  font-weight: bold;
+}
+
+/* Styling links */
+a:link {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blueviolet;
+}
+
+a:hover {
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline blue;
+}
+
+a:active {
+  background-color: orangered;
+  font-style: italic;
+}

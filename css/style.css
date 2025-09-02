@@ -1,0 +1,189 @@
+/* UNIVERSAL SELECTOR */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  /*Using the Shorthand you can write the padding style => padding: 20px (top and bottom) 40px (right ad left)*/
+  margin-bottom: 60px;
+
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+}
+
+/*List Selectors*/
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+/*Collapsing margins is when two margins meet on the screen only one of the two margins is visible*/
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/*Descendant selector*/
+/* footer p {
+  font-size: 13px;
+} */
+
+/*Descendant in another Descendant*/
+/* article header p {
+  font-style: italic;
+} */
+
+/* Using Id for styling "U are not allowed to use ID twice" */
+
+#author {
+  font-style: italic;
+  font-size: 15px;
+}
+
+#copyright {
+  font-size: 13px;
+}
+
+/* Using CLASS for styling */
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.related {
+  list-style: none;
+}
+
+/* Using the Pseudo Classes */
+
+/* This is manual process
+.first-li {
+  font-weight: bold;
+}*/
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* you can use odd, even or numbers according to the specifics */
+
+li:nth-child(odd) {
+  /* color: red; */
+  text-decoration: none;
+}
+
+/* The code below is a Misconception */
+
+/* article p:first-child {
+  color: red;
+}
+  The pseudo class selects the first element of the parent, it could be header, it could be anyother element.*/
+
+/* Styling Hyperlinks using LHVA (Link Hover Visited and Active*/
+
+/* a { 
+  color: #1098ad;
+} ==> wrong styling method for the links*/
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* Resolving Conflicts on CSS Rule */
+/* #copyright {
+  color: purple;
+}
+
+.copyright {
+  color: blueviolet;
+}
+
+.text {
+  color: brown;
+}
+
+footer p {
+  color: yellow !important;
+} */
