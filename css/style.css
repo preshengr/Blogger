@@ -18,6 +18,14 @@ body {
 
 }
 
+nav {
+  font-size: 10px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
 .post-header {
   margin-bottom: 40px;
 }
