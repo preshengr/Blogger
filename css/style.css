@@ -15,6 +15,7 @@ body {
   padding: 20px 40px;
   /*Using the Shorthand you can write the padding style => padding: 20px (top and bottom) 40px (right ad left)*/
   margin-bottom: 60px;
+  height: 80px;
 
 }
 
@@ -35,6 +36,7 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
+  width: 500px;
 }
 
 /*List Selectors*/
@@ -177,6 +179,11 @@ a:visited {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
 }
 
 /* Resolving Conflicts on CSS Rule */
